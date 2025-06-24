@@ -1,7 +1,8 @@
 
 *{
     margin: 0;
-    padding: 0;
+    padding: 0; 
+    font-family: Courier;
 }
 
 html, body{
@@ -11,7 +12,43 @@ html, body{
 }
 
 #container{
-    background-color: cadetblue;
+    background-color: white;
     width: 100%;
     min-height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h1{
+    padding: 5mm;
+}
+
+.temas{
+    width: calc(100% - 100px);
+    border: 1px solid #999;
+    border-radius: 10mm;
+    padding: 5mm;
+}
+h2, p{
+    padding-bottom: 5mm;
+}
+
+.botoes{
+    border: 1px solid #999;
+    padding: 2mm;
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+    border-radius: 5mm;
+}
+
+a{
+    padding: 2mm;
+    margin: 1mm;
+    border: 1px solid #999;
+    border-radius: 2mm;
+    text-decoration: none;
+    color: black;
 }
