@@ -12,6 +12,10 @@ html, body{ /*Este é para definir a largura e a altura do documento para 100%
     min-height: 100vh;
 }
 
+.center{
+    
+}
+
 #conteiner{
     display: flex;
     justify-content: center;

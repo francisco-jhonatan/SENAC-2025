@@ -1,0 +1,25 @@
+* {
+    /* Este bloco é responsável por remover espaçamentos 
+    pré-definidos de elementos do html */
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    /* Definir largura e altura do documento para 100% 
+    da janela dpo navegador */
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 5mm;
+}
