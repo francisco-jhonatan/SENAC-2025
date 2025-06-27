@@ -8,7 +8,7 @@ function Loops() {
 
     // O laço while vai executar uma ação enquanto uma condição for atendida.
     var flag = true
-    while (flag) {
+    while (flag) { // Com flag.
         alert("1° While" + n)
         n--
         if (n === 0) {
