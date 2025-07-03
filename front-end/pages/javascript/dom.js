@@ -17,6 +17,23 @@ classe = 'btn'
 container.innerHTML += `<button class="${classe}">${texto}</button>` // Literal de valores dinâmicos
 container.innerHTML += `<button class="${classe}">${texto}</button>` // Literal 
 
+var container = document.getElementById('container')
+
+container.innerHTML = `
+        <div class="card">
+                <div class="img"></div>
+            <div class="linha">
+                    <div class="avatar"></div>
+                <p>Texto, texto, texto, texto, texto, texto,
+                 texto, texto, texto, texto, texto, texto,</p>
+
+            </div>
+        </div>
+ `
+
+
+
+
 //a = 5
 //a = a + 1 // 6
 //a ++ // 7
