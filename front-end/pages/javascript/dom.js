@@ -10,6 +10,10 @@ elemento.id = 'btn' // adiciona um id ao elemento
 elemento.className = 'btn' // define uma classe ao elemento,
 // .classList também pode ser usado se for adicionar maiks de uma classe
 
+function Acao(){
+    alert("Ação")
+}
+
 container.appendChild(elemento) // adicina um elemento filho
 
 texto = 'literal'
@@ -19,17 +23,47 @@ container.innerHTML += `<button class="${classe}">${texto}</button>` // Literal
 
 var container = document.getElementById('container')
 
-container.innerHTML = `
+var pessoa = [
+    {
+        "nome": "Lena",
+        "foto": "https://upload.wikimedia.org/wikipedia/en/7/7d/Lenna_%28test_image%29.png",
+        "post": "https://upload.wikimedia.org/wikipedia/en/7/7d/Lenna_%28test_image%29.png",
+        "descricao": "Lena"
+    }, {
+        "nome": "Neymar",
+        "foto": "http://127.0.0.1:5500/front-end/images/neymar.jpg",
+        "post": "http://127.0.0.1:5500/front-end/images/neymar.jpg",
+        "descricao": "Neymar JN"
+    }, {
+        "nome": "Roberto Carlos",
+        "foto": "http://127.0.0.1:5500/front-end/images/roberto-carlos.jpg",
+        "post": "http://127.0.0.1:5500/front-end/images/roberto-carlos.jpg",
+        "descricao": "Roberto Carlos"
+    }, {
+        "nome": "Silvio Santos",
+        "foto": "http://127.0.0.1:5500/front-end/images/silvio-santos.jpg",
+        "post": "http://127.0.0.1:5500/front-end/images/silvio-santos.jpg",
+        "descricao": "Silvio Santos"
+    }
+]
+
+for (let i = 0; i < pessoa.length; i++) {
+    container.innerHTML += `
         <div class="card">
-                <div class="img"></div>
+                <img class="img" src="${pessoa[i].post}"
+                 width="300" heigth= "200"></img>
+
             <div class="linha">
-                    <div class="avatar"></div>
-                <p>Texto, texto, texto, texto, texto, texto,
-                 texto, texto, texto, texto, texto, texto,</p>
+                    <img class="avatar" src="${pessoa[i].foto}"
+                     width="50" heigth= "50"></img>
+
+                <p>${pessoa[i].descricao}</p>
 
             </div>
         </div>
  `
+}
+
 
 
 

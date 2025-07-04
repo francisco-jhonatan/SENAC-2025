@@ -51,5 +51,7 @@ var produtos = // Lista de produtos
     ]
     console.log(produtos[2]) // Para acessar um item da lista
     // utilizamos o index(lista[x])
-    var lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+    //var lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
