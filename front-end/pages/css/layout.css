@@ -32,7 +32,7 @@ html, body{
 .square{
     width: 30%;
     height: 500px;
-    background-color: black;
+    background-color: rgb(0, 255, 42);
 }
 
 .square2{
