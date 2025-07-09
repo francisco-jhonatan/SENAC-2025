@@ -1,3 +1,5 @@
+function Json() {
+
 // JSON - JavaScript Object Notation
 
 var pessoa = { // JSON -> estrutura de dados para representar um objeto
@@ -52,6 +54,6 @@ var produtos = // Lista de produtos
     console.log(produtos[2]) // Para acessar um item da lista
     // utilizamos o index(lista[x])
 
-
+}
     //var lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 

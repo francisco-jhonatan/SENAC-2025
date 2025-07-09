@@ -15,7 +15,18 @@ square.addEventListener('click', ()=>{
 
 
 var container = document.getElementById('container')
-flag = true
+var gameContainer = document.createElement('div')
+gameContainer.className = 'game-container'
+
+container.appendChild(gameContainer)
+
+for(let i = 0; i < 25; i++){
+    let cell = document.createElement('div')
+    cell.className = 'cell'
+    gameContainer.appendChild(cell)
+}
+
+
 function CreateSquare(){
     if(document.querySelector('.square')!==null){
         document.querySelector('.square').remove()
@@ -25,15 +36,18 @@ function CreateSquare(){
     a.addEventListener('click', ()=>{
         CreateSquare()
     })
-    if(flag){
-        a.style.backgroundColor = "blue"
-    } else{
-        a.style.backgroundColor = "red"
-    }
-    flag = !flag
-    container.appendChild(a)
+
+    let red = Math.floor(Math.random()*256)
+    let blue = Math.floor(Math.random()*256)
+    let white = Math.floor(Math.random()*256)
+    a.style.backgroundColor = 'rgb( '+red+','+blue+','+white+')'
+
+    var cells = document.querySelectorAll('.cell')
+    var randomIndex = Math.floor(Math.random()*25)
+    let randomCell = cells[randomIndex]
+
+
+    randomCell.appendChild(a)
 }
 
 CreateSquare()
-
-alert(Math.random*100)
