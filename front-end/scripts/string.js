@@ -1,3 +1,6 @@
+
+function Stringg(){
+
 var text = 'O rato roeu a roupa do rei de roma'
 var palavras = text.split('')
 for(let i = 0; i< palavras.length; i++){
@@ -19,3 +22,4 @@ for(let i = 0; i < palavras.length; i++) {
 }
 alert(soma)
 alert(text)
+}
