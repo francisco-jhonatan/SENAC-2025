@@ -2,10 +2,11 @@ var input = require('fs').readFileSync('/Users/Aluno/Documents/GitHub/SENAC-2025
 var lines = input.split('\n'); //lines é um array
 //=====================================================
 
-var A = parseFloat(lines.shift())
-var B = parseFloat(lines.shift())
-var C = parseFloat(lines.shift())
+let A = parseInt(lines.shift())
+let B = parseInt(lines.shift())
+let C = parseInt(lines.shift())
+let D = parseInt(lines.shift())
 
-var MEDIA = (A * 2 + B * 3 + C * 5) / 10
+var DIFERENCA = (A * B - C * D)
 
-console.log("MEDIA = "+ MEDIA.toFixed(1))
+console.log("DIFERENCA = "+DIFERENCA)
