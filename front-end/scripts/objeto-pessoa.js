@@ -1,8 +1,16 @@
-// Classe pai: Pessoa
-// Classe Filha: Servidor
-// Classe Filha: Professor
-// Classe Filha: Aluno
 
+// São os quatro pilares fundamentais
+// que sustentam o paradigma:
+// 1 abstração
+// 2 encapsulação
+// 3 Herança
+// 4 Polimorfismo
+
+
+// Classe pai: Pessoa            
+// Classe Filha: Servidor                             
+// Classe Filha: Professor                                                   
+// Classe Filha: Aluno                                                  
 
 
 class Pessoa {
