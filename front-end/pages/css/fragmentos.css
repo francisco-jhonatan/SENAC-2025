@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+    height: 100%;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    padding-inline-end: 20px;
+
+    background: orangered;
+    background: linear-gradient(90deg, white,orangered);
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 5px;
+}
+
+nav a:hover{
+    outline: 1px solid white;
+    border-radius: 10px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://piripiri40graus.com/img_post/sanec.jpg);
+    background-size: cover;
+ }
