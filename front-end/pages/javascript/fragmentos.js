@@ -45,9 +45,23 @@ var main = document.createDocumentFragment()
 var containerMain = document.createElement('div')
 containerMain.className = 'main'
 
-var nav = document.createElement('nav')
-var texto
+var text = document.createElement('div')
+text.className = 'meu-texto'
+var texto = document.createElement('a')
+texto.textContent = 'Sua jornada começa aqui.'
 
+text.appendChild(texto)
+containerMain.appendChild(text)
 main.appendChild(containerMain)
 container.appendChild(main)
+
+// #endregion
+
+//#region FOOTER
+
+var footer = document.createDocumentFragment()
+var containerFooter = document.createElement('div')
+containerFooter.className = 'footer'
+
+
 // #endregion
