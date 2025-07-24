@@ -2,6 +2,9 @@ var input = require('fs').readFileSync('/Users/Aluno/Documents/GitHub/SENAC-2025
 var lines = input.split('\n'); //lines é um array
 //=====================================================
 
-a = parseFloat(lines[0])
+let x = parseInt(lines[0])
+let y = parseFloat(lines[1])
 
-console.log("VOLUME = "+ (4/3.*3.14159*a**3).toFixed(3))
+let consumoMedio = x / y
+
+console.log(consumoMedio.toFixed(3)+ " km/l")

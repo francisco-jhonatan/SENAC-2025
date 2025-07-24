@@ -2,6 +2,12 @@ var input = require('fs').readFileSync('/Users/Aluno/Documents/GitHub/SENAC-2025
 var lines = input.split('\n'); //lines é um array
 //=====================================================
 
-a = parseFloat(lines[0])
+let a = parseInt(lines[0].split(" ")[0])
+let b = parseInt(lines[0].split(" ")[1])
+let c = parseInt(lines[0].split(" ")[2])
 
-console.log("VOLUME = "+ (4/3.*3.14159*a**3).toFixed(3))
+x = (a + b + Math.abs (a - b)) / 2
+x = (x + c + Math.abs (x - c)) / 2
+
+console.log(x+ " eh o maior")
+
