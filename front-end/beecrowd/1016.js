@@ -2,9 +2,8 @@ var input = require('fs').readFileSync('/Users/Aluno/Documents/GitHub/SENAC-2025
 var lines = input.split('\n'); //lines é um array
 //=====================================================
 
-let x = parseInt(lines[0])
-let y = parseFloat(lines[1])
+let distancia = parseInt(lines[0])
 
-let consumoMedio = x / y
+let tempo = distancia * 2
 
-console.log(`${consumoMedio.toFixed(3)} km/l`)
+console.log(tempo + " minutos")
